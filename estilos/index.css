@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+body{
+
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+    background: url(../recursos/imagen-fondo.png) no-repeat;
+    
+}
+
+.fondo{
+
+    background-image: url(../recursos/imagen-fondo.png);
+    position: absolute;
+    
+    
+}
+
+.box{
+
+    position: absolute;
+    top: 50%;
+    left: 90%;
+    transform: translate(-50%, -50%);
+}
+
+input.src{
+
+    padding: 5px 10px 5px 50px;
+    outline: none;
+    font-size: 18px;
+    border-radius: 15px;
+    color: #444;
+    border: 3px solid #048C73;
+    background: #fff url(../recursos/search-icon.png) no-repeat 9px center;
+    width: 0px;
+    transition: all .5s;
+}
+
+input.src:hover{
+
+    width: 100px;
+    background-color: #fff;
+    border-color: gray;
+    box-shadow: 0 0 5px #6dcff680;
+}
+
+.container{
+
+    width: 100%;
+    height: 60px;
+    background: #048C73;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 5rem;
+    box-sizing: border-box;
+    position: sticky;
+    top: 0;
+    
+}
+
+
+.item-options{
+
+    color: white;
+    margin: 0 1.5rem;
+    text-decoration: none;
+    
+}
+
+.menu a{
+
+    color:#fff;
+    text-decoration: none;
+    padding: 20px;
+    
+}
+
+.menu a:hover{
+
+    background-color: #fff;
+    color: #048C73;
+    
+}
+
+.img{
+
+    background-image: url(../recursos/unlam-medica-100px.png);
+    background-color: transparent;
+    background-size: auto;
+    background-repeat: no-repeat;
+    position: absolute;
+    float: left;
+    left: 20px;
+    top: 10px;
+    height: 50px;
+    width: 100px;
+}
+
+.container{
+
+    width: 100%;
+    height: 60px;
+    background:  #048C73;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 5rem;
+    box-sizing: border-box;
+    position: sticky;
+    top: 0px;
+}
+
+.container-footer{
+
+    background-color: gray;
+    padding: 30px;
+    margin-top: 600px;
+    color: white;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+
+}
+
+.sintomas h2{
+
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 70px;
+    text-align: justify;
+
+}
+
+.sintomas h4{
+
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+    text-align: justify;
+}
+
+h1{
+
+    font-family: sans-serif;
+    font-size: 200px;
+    left: 800px; 
+    top: 570px;
+    padding: 0;   
+    position: absolute;
+}
+.material-icons{
+
+    background-image: url(../recursos/call-24px.svg);
+    background-color: transparent;
+    background-size: 200px;
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 600px;
+    top: 720px;
+    height: 200px;
+    width: 200px;
+    
+   
+}
+
+.redes{
+
+    height: 60px;
+    left: 0px;
+    background-color: black;
+    display: flex;
+    position: absolute;
+    margin-top: 500px;
+    width: 100%;
+    box-sizing: border-box;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.redes h4{
+
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0 5.5rem;
+}
