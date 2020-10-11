@@ -109,12 +109,14 @@ input.src:hover{
 	width: auto;
 	display: grid;
 	grid-template-columns: 200px 1% 1fr;
-	grid-template-rows: auto 15px auto 15px auto;
+    grid-template-rows: auto 15px auto 15px auto;
+    
 }
 
 nav{
 
-	display: block;
+    display: block;
+    list-style: none;
 }
 
 
@@ -132,13 +134,14 @@ h2{
 .sidebar{
 
 		padding: 1.2em; 
-		background-color: #EEEEEE; 
+        background-color: #EEEEEE; 
+        list-style: none;
 	
 }
 
 aside{
 
-	display: block;
+    display: block;
 }
 
 footer{
@@ -162,7 +165,8 @@ footer{
 
 .sidebar {
 	grid-column: 1;
-	grid-row: 3;
+    grid-row: 3;
+    list-style: none;
   }
   
   .main {
@@ -204,13 +208,16 @@ footer{
     box-sizing: border-box;
     position: sticky;
     top: 0;
-
+    
   }
 
-  /*input.src_enfermedades:hover{
+  .coronavirus{
 
-    width: 100px;
-    background-color: #fff;
-    border-color: gray;
-    box-shadow: 0 0 5px #6dcff680;
-}
+    background-image: url(../recursos/23-fiebre-tos.png);
+    display: block;
+    padding: 50px;
+    width: max-content;
+    height: max-content;
+    background-size: contain;
+   
+  }
