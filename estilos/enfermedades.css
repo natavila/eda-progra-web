@@ -112,11 +112,13 @@ h2{
 	text-align: center;
     font-weight: bold;
     padding: 0%;
+    color: white;
+    font-size: 30px;
 }
 .sidebar{
 
         padding: 0.5em;
-        margin-top: 85px;
+        margin-top: 60px;
         background-color: #EEEEEE; 
         list-style: none;
         
@@ -218,18 +220,21 @@ input.src_enfermedades{
     padding-bottom: 100px;
     background-size: contain;
 }
-
-.enfermedades{
-
-    text-align: justify;
-    
-}
-
 p{
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
-
 h1{
 
-    font-size: 30px;
+    font-size: 25px;
+
+}
+
+.enfermedades a{
+
+    text-decoration: none;
+    padding: 7px;
+    background-color: #048C73;
+    border-radius: 15px;
+    color: white;
+    
 }
