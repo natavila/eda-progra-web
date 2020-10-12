@@ -7,7 +7,6 @@ body{
     font-family: 'Open Sans', sans-serif;
     
 }
-
 .box{
 
     position: absolute;
@@ -15,7 +14,6 @@ body{
     left: 90%;
     transform: translate(-50%, -50%);
 }
-
 input.src{
 
     padding: 5px 10px 5px 50px;
@@ -29,7 +27,6 @@ input.src{
 	transition: all .5s;
 	
 }
-
 input.src:hover{
 
     width: 100px;
@@ -37,7 +34,6 @@ input.src:hover{
     border-color: gray;
     box-shadow: 0 0 5px #6dcff680;
 }
-
 .container{
 
     width: 100%;
@@ -51,8 +47,6 @@ input.src:hover{
     
     
 }
-
-
 .item-options{
 
     color: white;
@@ -60,7 +54,6 @@ input.src:hover{
     text-decoration: none;
     
 }
-
 .menu a{
 
     color:#fff;
@@ -68,14 +61,12 @@ input.src:hover{
     padding: 20px;
     
 }
-
 .menu a:hover{
 
     background-color: #fff;
     color: #048C73;
     
 }
-
 .img{
 
     background-image: url(../recursos/unlam-medica-100px.png);
@@ -89,7 +80,6 @@ input.src:hover{
     height: 50px;
     width: 100px;
 }
-
 .container{
 
     width: 100%;
@@ -102,48 +92,37 @@ input.src:hover{
     box-sizing: border-box;
     
 }
-
 .container_enfermedades{
 
 	margin: 0 auto;
 	width: auto;
 	display: grid;
-	grid-template-columns: 200px 1% 1fr;
+	grid-template-columns: 200px 1.5% 1fr;
     grid-template-rows: auto 15px auto 15px auto;
     
 }
-
 nav{
 
     display: block;
     list-style: none;
 }
-
-
-
 h2{
 
-	display: block;
-	font-size: 1.5em;
-	margin-block-start: 0.83em;
-	margin-block-end: 00.83em;
-	margin-inline-start: 0px;
-	margin-inline-end: 0px;
+    margin-top: 0em;
+	text-align: center;
 	font-weight: bold;
 }
 .sidebar{
 
-		padding: 1.2em; 
+        padding: 0.4em;
         background-color: #EEEEEE; 
         list-style: none;
 	
 }
-
 aside{
 
     display: block;
 }
-
 footer{
 
 	background-color: gray;
@@ -151,40 +130,29 @@ footer{
     margin-top: 600px;
     color: white;
 }
-
 .main{
 
 	grid-column: 3;
 	grid-row: 3;
 }
-
 .main { 
-	padding: 1.2em; 
+	padding: 0.5em; 
 	background-color: #BBDEFB; 
 }
-
 .sidebar {
 	grid-column: 1;
     grid-row: 3;
     list-style: none;
-  }
-  
-  .main {
-	grid-column: 3;
-	grid-row: 3;
-  }
-
-  .box_enfermedades{
+}
+.box_enfermedades{
 
 	position: absolute;
     top: 50%;
     left: 90%;
-	transform: translate(-50%, -50%);
-	
-  }
-  
+    transform: translate(-50%, -50%);
+}
 
-  input.src_enfermedades{
+input.src_enfermedades{
 
 	padding: 5px 10px 5px 50px;
     outline: none;
@@ -195,9 +163,8 @@ footer{
     background: #fff url(../recursos/search-icon.png) no-repeat 9px center;
 	width: max-content;
 	
-  }
-
-  .encabezado_enfermedades{
+}
+.encabezado_enfermedades{
 	width: 100%;
     height: 60px;
     background: #048C73;
@@ -208,30 +175,24 @@ footer{
     box-sizing: border-box;
     position: sticky;
     top: 0;
-    
-  }
+}
+.coronavirus{
 
-  .coronavirus{
+    background-image: url(../recursos/SARAMPION.jpg);
+    background-repeat: no-repeat;
+    display: block;
+    padding: 100px;
+    background-size: contain;   
+}
+.viruela{
 
     background-image: url(../recursos/SARAMPION.jpg);
     background-repeat: no-repeat;
     display: block;
     padding: 100px;
     background-size: contain;
-    
-   
-  }
-
-  .viruela{
-
-    background-image: url(../recursos/SARAMPION.jpg);
-    background-repeat: no-repeat;
-    display: block;
-    padding: 100px;
-    background-size: contain;
-  }
-
-  .sarampion{
+}
+.sarampion{
     
     background-image: url(../recursos/SARAMPION.jpg);
     background-repeat: no-repeat;
@@ -239,4 +200,4 @@ footer{
     padding: 100px;
     background-size: contain;
 
-  }
+}
