@@ -184,7 +184,7 @@ input.src_enfermedades{
     padding: 100px;
     background-size: contain;   
 }
-.viruela{
+.ebola{
 
     background-image: url(../recursos/SARAMPION.jpg);
     background-repeat: no-repeat;
@@ -200,4 +200,12 @@ input.src_enfermedades{
     padding: 100px;
     background-size: contain;
 
+}
+.influenza{
+
+    background-image: url(../recursos/SARAMPION.jpg);
+    background-repeat: no-repeat;
+    display: block;
+    padding: 100px;
+    background-size: contain;
 }
