@@ -213,11 +213,30 @@ footer{
 
   .coronavirus{
 
-    background-image: url(../recursos/23-fiebre-tos.png);
+    background-image: url(../recursos/SARAMPION.jpg);
+    background-repeat: no-repeat;
     display: block;
-    padding: 50px;
-    width: max-content;
-    height: max-content;
+    padding: 100px;
     background-size: contain;
+    
    
+  }
+
+  .viruela{
+
+    background-image: url(../recursos/SARAMPION.jpg);
+    background-repeat: no-repeat;
+    display: block;
+    padding: 100px;
+    background-size: contain;
+  }
+
+  .sarampion{
+    
+    background-image: url(../recursos/SARAMPION.jpg);
+    background-repeat: no-repeat;
+    display: block;
+    padding: 100px;
+    background-size: contain;
+
   }
