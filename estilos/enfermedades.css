@@ -110,18 +110,22 @@ h2{
 
     margin-top: 0em;
 	text-align: center;
-	font-weight: bold;
+    font-weight: bold;
+    padding: 0%;
 }
 .sidebar{
 
-        padding: 0.4em;
+        padding: 0.5em;
+        margin-top: 90px;
         background-color: #EEEEEE; 
         list-style: none;
+        
 	
 }
 aside{
 
     display: block;
+    
 }
 footer{
 
@@ -182,6 +186,7 @@ input.src_enfermedades{
     background-repeat: no-repeat;
     display: block;
     padding: 100px;
+    padding-bottom: 110px;
     background-size: contain;   
 }
 .ebola{
@@ -190,6 +195,7 @@ input.src_enfermedades{
     background-repeat: no-repeat;
     display: block;
     padding: 100px;
+    padding-bottom: 120px;
     background-size: contain;
 }
 .sarampion{
@@ -198,6 +204,7 @@ input.src_enfermedades{
     background-repeat: no-repeat;
     display: block;
     padding: 100px;
+    padding-bottom: 120px;
     background-size: contain;
 
 }
@@ -207,5 +214,12 @@ input.src_enfermedades{
     background-repeat: no-repeat;
     display: block;
     padding: 100px;
+    padding-bottom: 100px;
     background-size: contain;
+}
+
+.enfermedades{
+
+    text-align: justify;
+    
 }
