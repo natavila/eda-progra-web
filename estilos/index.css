@@ -44,10 +44,6 @@ header nav ul a{
 	margin-left: 15px;
 }
 
-section{
-	position: relative;
-}
-
 #texto{
 	position: absolute;
 }
