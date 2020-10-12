@@ -20,7 +20,13 @@
 <div class="encabezado_enfermedades">
 		<div class="box_enfermedades">
 	</div>
-				<input type="text" name="search" placeholder="Filtrar por enfermedad" class="src_enfermedades" autocomplete="off">
+	<input type="text" list="listaenfermedades" name="search" placeholder="Filtrar por enfermedad" class="src_enfermedades" autocomplete="off">
+	<datalist id="listaenfermedades">
+		<option value="Coronavirus"></option>
+		<option value="Ebola"></option>
+		<option value="Sarampion"></option>
+		<option value="Influenza"></option>
+	</datalist>	
 			</div>
 			<nav class="container_enfermedades">
 			<aside class="sidebar">
