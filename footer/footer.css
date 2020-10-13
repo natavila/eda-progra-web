@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+ 
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    color: white;
+}
+
+
+.content-sup{
+    height: 30vh;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;  
+}
+
+.col{
+    padding: 20px;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+.uno{
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+   
+}
+
+.naranja{
+    color: #ff9600;
+}
+
+#titulo{
+    cursor: pointer;
+}
+
+
+
+.lista {
+    display: flex ;
+    flex-direction: column;
+    align-items: flex-start;
+    list-style: none;
+    margin-top: 20px;
+}
+
+.lista li{
+    padding-top: 8px;
+}
+
+
+
+.sub{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 20px;
+}
+
+.sub #mail{
+    border-radius: 10px;
+    padding: 5px;    
+}
+
+.sub #submit{
+    margin-top: 10px;
+    background-color: #00ff4c;
+    border-radius: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-style: none;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.redes{
+    width: 100%;
+    padding: 20px;
+    
+}
+
+.redes ul{
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+	list-style: none;
+	margin-bottom: 10px;
+}
+
+.redes li {
+	background-color: #BAADAA;
+	height: 25px;
+	width: 25px;
+	border-radius: 50%;
+	padding: 18px;
+	margin-right: 12px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.redes a{
+	text-decoration: none;
+	
+}
+
+#facebook {
+    
+	background-color: #3b5998;
+}
+
+#twitter {
+	background-color:#55acee; 
+}
+
+#instagram {
+	background-color: #125688;
+}
+
+#youtube{
+	background-color: #bb0000;
+}
+
+#whatsapp{
+	background-color: #4dc247;
+}
+
+
+
