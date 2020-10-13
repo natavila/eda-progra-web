@@ -1,10 +1,12 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans');
-body{
 
-    margin: 0;
-    padding: 0;
+/*  HEADER  */
+*{
+
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
     font-family: 'Open Sans', sans-serif;
-    
 }
 .box{
 
@@ -90,4 +92,281 @@ input.src:hover{
     padding: 0 5rem;
     box-sizing: border-box;
     
+}
+h1{
+
+    text-align: center;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-size: 40px;
+}
+
+
+footer{
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    color: white;
+    margin-top: 2em;
+    
+}
+
+
+.content-sup{
+    height: 30vh;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;  
+}
+
+.col{
+    padding: 20px;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+.uno{
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+   
+}
+
+.naranja{
+    color: #ff9600;
+}
+
+#titulo{
+    cursor: pointer;
+}
+
+ul .lista{
+
+    margin-left: 0px;
+}
+
+.lista {
+    display: flex ;
+    flex-direction: column;
+    align-items: flex-start;
+    list-style: none;
+    margin-top: 20px;
+}
+
+.lista li{
+    padding-top: 8px;
+    
+}
+
+
+
+.sub{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 20px;
+}
+
+.sub #mail{
+    border-radius: 10px;
+    padding: 5px;    
+}
+
+.sub #submit{
+    margin-top: 10px;
+    background-color: #00ff4c;
+    border-radius: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-style: none;
+    cursor: pointer;
+}
+
+.redes{
+    width: 100%;
+    padding: 20px;
+    
+}
+
+.redes ul{
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+	list-style: none;
+	margin-bottom: 10px;
+}
+
+.redes li {
+	background-color: #BAADAA;
+	height: 25px;
+	width: 25px;
+	border-radius: 50%;
+	padding: 18px;
+	margin-right: 12px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.redes a{
+	text-decoration: none;
+	
+}
+
+#facebook {
+    
+	background-color: #3b5998;
+}
+
+#twitter {
+	background-color:#55acee; 
+}
+
+#instagram {
+	background-color: #125688;
+}
+
+#youtube{
+	background-color: #bb0000;
+}
+
+#whatsapp{
+	background-color: #4dc247;
+}
+
+/*  GRID */
+
+.main { 
+	padding: 1.2em; 
+	background-color:white; 
+}
+
+.sidebar { 
+	padding: 1.2em; 
+    margin-top: 40px;
+    width: 100%;
+    height: 100%;
+    background-image: url(../recursos/SARAMPION.jpg);
+    background-repeat: no-repeat;
+    
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
+
+
+
+/* Establezco la Grilla */
+.grid_container {
+	margin: 0 auto;
+	width: 1000px;
+	display: grid;
+	
+	/*Grid de 3x5*/
+	/* 3 columnas: 1a de 200px, 2a como margen (1%), 3a ocupa el espacio restante */
+	grid-template-columns: 300px 1% 1fr;
+	
+	/* 5 filas: grid-rows: 1a, 3a y 5a ancho automático, 2a y 4a como margen de 15px */
+	grid-template-rows: auto;
+}
+
+/* Establezco el espacio que ocupa cada sección en la grilla */
+
+.sidebar {
+  grid-column: 1;
+  grid-row: 3;
+}
+
+.main {
+  grid-column: 3;
+  grid-row: 3;
+}
+
+
+/*  FORMULARIO  */
+
+h1{
+    margin-top: 0.8em;
+}
+h2{
+    text-align: center;
+}
+/* Establezco la Grilla */
+section {
+    
+    margin-left: 250px;
+    margin-top: 20px;
+	width: 1000px;
+    display: grid;
+    
+	
+	/*Grid de 3x5*/
+	/* 3 columnas: 1a de 200px, 2a como margen (1%), 3a ocupa el espacio restante */
+	grid-template-columns: 450px;
+	
+	/* 5 filas: grid-rows: 1a, 3a y 5a ancho automático, 2a y 4a como margen de 15px */
+    
+    
+}
+
+/* Establezco el espacio que ocupa cada sección en la grilla */
+
+.leyenda {
+  grid-column: 1;
+  grid-row: 1;
+  margin-top: 20px;
+  
+}
+
+.formulario {
+  grid-column: 2;
+  grid-row: 1;
+  padding-left: 20px;
+  line-height: 60px;
+  
+}
+
+h3 {
+    display: block;
+    font-size: 1.17em;
+    margin-block-start: 0.5em;
+    margin-block-end: 0.5em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+.nya{
+
+    width: 21.2em;
+}
+h5{
+    margin-top: 20px;
+    font-size: 20px;
+}
+.sintoma-1{
+     background-image: url(../recursos/23-fiebre-tos.png);
+     background-repeat: no-repeat;   
+     padding: 100px;
+     background-size: 250px;
+     
+     
+}
+.sintoma-2{
+    background-image: url(../recursos//24-fiebre-dolor-garganta.png);
+    background-repeat: no-repeat;   
+    padding: 100px;
+    background-size: 250px;
+   
+    
+}
+.sintoma-3{
+    background-image: url(../recursos/25-fiebre-dificultad-respirar.png);
+    background-repeat: no-repeat;   
+    padding: 100%;
+    padding-top: 0%;
+    background-size: 250px;
+    margin-top: 0%;
 }

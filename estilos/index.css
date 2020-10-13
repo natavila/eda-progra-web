@@ -113,17 +113,6 @@ input.src:hover{
     top: 0px;
 }
 
-.container-footer{
-
-    background-color: #8b8b8b;
-    padding: 30px;
-    margin-top: 600px;
-    color: white;
-    display: flex;
-    justify-content: left;
-    align-items: center;
-
-}
 
 .sintomas h2{
 
@@ -164,23 +153,95 @@ h1{
    
 }
 
-.redes{
+.container-footer{
 
-    height: 60px;
-    left: 0px;
-    background-color: black;
+    background-color: #8b8b8b;
+    padding: 30px;
+    margin-top: 600px;
+    color: white;
     display: flex;
-    position: absolute;
-    margin-top: 500px;
-    width: 100%;
-    box-sizing: border-box;
-    justify-content: center;
+    justify-content: left;
     align-items: center;
 
 }
+a{
+    color: white;
+    text-decoration: none;
+}
 
-.redes h4{
+footer{
+    display: flex;
+    flex-direction: column;
+    background-color: #048c73;
+    color: white;
+    margin-top: 0px;
+}
 
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    margin: 0 5.5rem;
+
+.content-sup{
+    height: 30vh;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;  
+}
+
+.col{
+    padding: 20px;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+.uno{
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+   
+}
+
+.naranja{
+    color: #ff9600;
+}
+
+#titulo{
+    cursor: pointer;
+}
+
+
+
+.lista {
+    display: flex ;
+    flex-direction: column;
+    align-items: flex-start;
+    list-style: none;
+    margin-top: 20px;
+}
+
+.lista li{
+    padding-top: 8px;
+}
+
+
+
+.sub{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 20px;
+}
+
+.sub #mail{
+    border-radius: 10px;
+    padding: 5px;    
+}
+
+.sub #submit{
+    margin-top: 10px;
+    background-color: #00ff4c;
+    border-radius: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-style: none;
+    cursor: pointer;
 }
