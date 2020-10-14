@@ -8,6 +8,7 @@
     box-sizing: border-box;
     font-family: 'Open Sans', sans-serif;
 }
+
 .box{
 
     position: absolute;
@@ -45,6 +46,8 @@ input.src:hover{
     align-items: center;
     padding: 0 5rem;
     box-sizing: border-box;
+    position: sticky;
+    top: 0;
     
     
 }
@@ -106,7 +109,8 @@ footer{
     flex-direction: column;
     background-color: black;
     color: white;
-    margin-top: 2em;
+    margin-top: 100px;
+   
     
 }
 
@@ -134,7 +138,7 @@ footer{
 }
 
 .naranja{
-    color: #ff9600;
+    color:  #048C73;
 }
 
 #titulo{
@@ -239,7 +243,8 @@ ul .lista{
 
 .main { 
 	padding: 1.2em; 
-	background-color:white; 
+    background-color:#048c7385; 
+    border-radius: 15px;
 }
 
 .sidebar { 
@@ -288,28 +293,32 @@ a{
 
 /*  FORMULARIO  */
 
-h1{
-    margin-top: 0.8em;
+.covid{
+    margin: 0.8em;
 }
-h2{
+.deteccion{
     text-align: center;
+   margin: 30px;
+    
 }
 /* Establezco la Grilla */
 section {
+
     
-    margin-left: 250px;
+    margin-left: 175px;
     margin-top: 20px;
 	width: 1000px;
     display: grid;
-    
+    align-content: center;
+    border-radius: 15px;
 	
 	/*Grid de 3x5*/
 	/* 3 columnas: 1a de 200px, 2a como margen (1%), 3a ocupa el espacio restante */
-	grid-template-columns: 450px;
+	grid-template-columns: 500px 50px 500px;
 	
 	/* 5 filas: grid-rows: 1a, 3a y 5a ancho automático, 2a y 4a como margen de 15px */
     
-    
+    grid-template-rows: 780px;
 }
 
 /* Establezco el espacio que ocupa cada sección en la grilla */
@@ -317,15 +326,18 @@ section {
 .leyenda {
   grid-column: 1;
   grid-row: 1;
-  margin-top: 20px;
-  
+  padding-left: 0px;
+  background-color: white;
 }
 
 .formulario {
-  grid-column: 2;
+  grid-column: 3;
   grid-row: 1;
-  padding-left: 20px;
   line-height: 60px;
+  padding-top: 0;
+  background-color: #048c735b;
+  border-radius: 15px;
+  text-align: center;
   
 }
 
@@ -370,3 +382,5 @@ h5{
     background-size: 250px;
     margin-top: 0%;
 }
+
+
