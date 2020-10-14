@@ -1,49 +1,48 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans');
 
+*{
+
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
 body{
 
-    margin: 0;
-    padding: 0;
-    font-family: 'Open Sans', sans-serif;
     background: url(../recursos/imagen-fondo.png) no-repeat;
     
 }
 
-.fondo{
-
-    background-image: url(../recursos/imagen-fondo.png);
-    position: absolute;
-    
-    
-}
 
 .box{
 
     position: absolute;
-    top: 50%;
+    top: 30px;
     left: 90%;
     transform: translate(-50%, -50%);
+    
 }
-
 input.src{
 
-    padding: 5px 10px 5px 50px;
-    outline: none;
-    font-size: 18px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 30px;
+    padding-right: 10px;
     border-radius: 15px;
-    color: #444;
+    font-size: 15px;
     border: 3px solid #048C73;
     background: #fff url(../recursos/search-icon.png) no-repeat 9px center;
     width: 0px;
     transition: all .5s;
+    text-align: start;
+	
 }
-
 input.src:hover{
 
     width: 100px;
     background-color: #fff;
     border-color: gray;
-    box-shadow: 0 0 5px #6dcff680;
+    box-shadow: 0 0 5px white;
 }
 
 .container{
@@ -152,17 +151,57 @@ h1{
     
    
 }
+section{
 
-.container-footer{
+    background-color: gray;
+}
+.container-grid{
 
-    background-color: #8b8b8b;
-    padding: 30px;
-    margin-top: 600px;
+    margin-left: 100px;
+    display: grid;
+    margin-top: 740px;
     color: white;
-    display: flex;
-    justify-content: left;
-    align-items: center;
+    grid-template-columns: 500px 200px 200px;
+    grid-template-rows: 300px;
+    text-align: center;
+}
+.sintomas{
 
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    grid-column: 1;
+    grid-row: 1;
+    margin-top: 40px;
+    
+}
+.llama{
+
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 100px;
+    grid-column: 1;
+    grid-row: 1;
+}
+.columna-1{
+
+    line-height: 100px;
+}
+.numero{
+
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 200px;
+    grid-column: 3;
+    grid-row: 1;
+    margin-top: 20px;
+    margin-left: 50px;
+}
+.telefono{
+
+    background-image: url(../recursos/call-24px.svg);
+    background-repeat: no-repeat;
+    grid-column: 2;
+    background-size: 200px;
+    margin-top: 50px;
+    margin-left: 20px;
 }
 a{
     color: white;
@@ -172,9 +211,9 @@ a{
 footer{
     display: flex;
     flex-direction: column;
-    background-color: #048c73;
+    background-color: black;
     color: white;
-    margin-top: 0px;
+    margin-top: 20px;
 }
 
 
@@ -201,7 +240,7 @@ footer{
 }
 
 .naranja{
-    color: #ff9600;
+    color: #048C73;
 }
 
 #titulo{
@@ -238,10 +277,61 @@ footer{
 
 .sub #submit{
     margin-top: 10px;
-    background-color: #00ff4c;
+    background-color: #048C73;
     border-radius: 10px;
     padding-left: 15px;
     padding-right: 15px;
     border-style: none;
     cursor: pointer;
+}
+.redes{
+    width: 100%;
+    padding: 20px;
+    
+}
+
+.redes ul{
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+	list-style: none;
+	margin-bottom: 10px;
+}
+
+.redes li {
+	background-color: #BAADAA;
+	height: 25px;
+	width: 25px;
+	border-radius: 50%;
+	padding: 18px;
+	margin-right: 12px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.redes a{
+	text-decoration: none;
+	
+}
+
+#facebook {
+    
+	background-color: #3b5998;
+}
+
+#twitter {
+	background-color:#55acee; 
+}
+
+#instagram {
+	background-color: #125688;
+}
+
+#youtube{
+	background-color: #bb0000;
+}
+
+#whatsapp{
+	background-color: #4dc247;
 }
