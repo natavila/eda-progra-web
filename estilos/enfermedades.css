@@ -158,7 +158,7 @@ input.src_enfermedades{
     margin: 0 50px;
     width: auto;
     height: max-content;
-    grid-template-columns: 200px 1% 1fr;
+    grid-template-columns: 300px 1% 1fr;
     grid-template-rows: 400px 15px 400px 15px 400px 15px 400px ;
    
    
@@ -177,8 +177,9 @@ input.src_enfermedades{
     font-size: 30px;
 }
 .sidebar{
-    margin-top: 20px;
+   
     grid-column: 1;
+    
     
 }
  #covid{
@@ -213,46 +214,50 @@ input.src_enfermedades{
 .coronavirus{
 
     
-    background-image: url(../recursos/SARAMPION.jpg);
+    background-image: url(../recursos/imagen-coronavirus.jpg);
     background-repeat: no-repeat;
     width: 100%;
     height: 100%;
-    background-size: 200px;
+    background-size: 300px;
     padding: auto;
     grid-row: 1;
+    margin-top: 70px;
 }
 .ebola{
 
     
-    background-image: url(../recursos/SARAMPION.jpg);
+    background-image: url(../recursos/imagen-ebola.jpg);
     background-repeat: no-repeat;
     width: 100%;
     height: 100%;
-    background-size: 200px;
+    background-size: 300px;
     padding: auto;
     grid-row: 2;
+    margin-top: 70px;
 }
 .sarampion{
 
     
-    background-image: url(../recursos/SARAMPION.jpg);
+    background-image: url(../recursos/imagen-sarampion.jpg);
     background-repeat: no-repeat;
     width: 100%;
     height: 100%;
-    background-size: 200px;
+    background-size: 300px;
     padding: auto;
     grid-row: 3;
+    margin-top: 25px;
 }
 .influenza{
 
     
-    background-image: url(../recursos/SARAMPION.jpg);
+    background-image: url(../recursos/imagen-influenza.jpg);
     background-repeat: no-repeat;
     width: 100%;
     height: 100%;
-    background-size: 200px;
+    background-size: 300px;
     padding: auto;
     grid-row: 4;
+    margin-top: 20px;
 }
 
 .main #ver-mas{
@@ -269,7 +274,7 @@ footer{
     flex-direction: column;
     background-color: black;
     color: white;
-    margin-top: 0px;
+    margin-top: 40px;
 }
 
 
