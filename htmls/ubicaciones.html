@@ -3,7 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Unlam Medical - Home</title>
-	<link rel="stylesheet" type="text/css" href="../index/estilos/ubicaciones.css">
+	<link rel="stylesheet" type="text/css" href="C:\Users\Samsung\Desktop\EDA1-Grupo-12\estilos\ubicaciones.css">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 </head>
 
@@ -12,7 +12,13 @@
     <header class="container">
 		<div class="img"></div>
 		<div class="box">
-			<input type="text" name="search" placeholder="Buscar" class="src" autocomplete="off">
+			<input type="text" list="listaenfermedades" name="search" placeholder="Buscar" class="src" autocomplete="off">
+			<datalist id="listaenfermedades">
+				<option value="COVID-19"></option>
+				<option value="Ebola"></option>
+				<option value="Sarampion"></option>
+				<option value="Influenza"></option>
+			</datalist>
 		</div>
         <nav class="menu">
             <a href="../index/index.html" class="item-options" target="_blank">HOME</a>

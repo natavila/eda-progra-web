@@ -181,8 +181,6 @@ input.src:hover{
     grid-row: 2;
 }
 
-
-
 footer{
     display: flex;
     flex-direction: column;
