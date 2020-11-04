@@ -7,6 +7,9 @@
     box-sizing: border-box;
     font-family: 'Open Sans', sans-serif;
 }
+
+/* ENCABEZADO */
+
 .box{
 
     position: absolute;
@@ -104,6 +107,8 @@ input.src:hover{
     position: sticky;
     top: 0px;
 }
+
+/* COLOR Y LETRA DEL SECTION */
 section{
 	
 	background-color: rgba(128, 128, 128, 0.479);
@@ -115,16 +120,15 @@ h1{
 	color: white;
 	font-size: 40px;
 }
+
+/* POSICION DEL MAPA */
 #mapa{
 
 	margin-left: 17em;
 	
 }
 
-
-
-
-
+/* FOOTER */
 
 footer{
     display: flex;
@@ -179,7 +183,7 @@ footer{
     padding-top: 8px;
 }
 
-
+/* SUSCRIBITE */
 
 .sub{
     display: flex;
@@ -202,6 +206,9 @@ footer{
     border-style: none;
     cursor: pointer;
 }
+
+/* REDES SOCIALES */
+
 .redes{
     width: 100%;
     padding: 20px;
@@ -254,6 +261,7 @@ footer{
 	background-color: #4dc247;
 }
 
+/* COLOR LETRA FOOTER */
 a{
 	color: white;
 	text-decoration: none;

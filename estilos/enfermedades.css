@@ -109,7 +109,7 @@ input.src:hover{
     font-size: 30px;
 }
 
-
+/* BUSCADOR ENFERMEDADES */
 
 .box_enfermedades{
 
@@ -148,7 +148,7 @@ input.src_enfermedades{
     
 }
 
-/*  GRID SECCION  */
+/*  GRID SECCION  ENFERMEDADES */
 
 .container_enfermedades{
 
@@ -164,6 +164,9 @@ input.src_enfermedades{
    
     
 }
+
+/* SECTION MAIN */
+
 .main{
 
     grid-column: 3;
@@ -176,12 +179,18 @@ input.src_enfermedades{
 
     font-size: 30px;
 }
+
+/* ASIDE */
+
 .sidebar{
    
     grid-column: 1;
     
     
 }
+
+/* INFO ENFERMEDADES */
+
  #covid{
     border-radius: 15px;
     padding: 20px;
@@ -211,6 +220,9 @@ input.src_enfermedades{
     grid-row: 7;
     background-color: #048c7385;
 }
+
+/* IMAGENES ENFERMEDADES */
+
 .coronavirus{
 
     
@@ -259,6 +271,8 @@ input.src_enfermedades{
     grid-row: 4;
     margin-top: 20px;
 }
+
+/* BOTON VER MAS DEL MAIN */
 
 .main #ver-mas{
 
@@ -345,6 +359,9 @@ footer{
     border-style: none;
     cursor: pointer;
 }
+
+/* COLUMNA REDES SOCIALES */
+
 .redes{
     width: 100%;
     padding: 20px;

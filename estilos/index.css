@@ -7,12 +7,15 @@
     box-sizing: border-box;
     font-family: 'Open Sans', sans-serif;
 }
+
+/* IMAGEN DE FONDO */
 body{
 
     background: url(../recursos/imagen-fondo.png) no-repeat;
     
 }
 
+/* ENCABEZADO */
 
 .box{
 
@@ -112,7 +115,41 @@ input.src:hover{
     top: 0px;
 }
 
+/* COLUMNA ENFERMEDADES, HOSPITALES, CALENDARIO DE VACUNAS */
 
+.grid-barra{
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 200px 100px 200px 100px 200px;
+    grid-template-rows: 50px;
+    
+}
+.estilo-barra{
+
+    padding: 5px;
+    background-color: #048C73;
+    border-radius: 10px;
+    text-align: center;
+    margin-bottom: 20px;
+    
+}
+
+#enfermedades{
+    
+    grid-row: 1;
+    grid-column: 1;
+    
+}
+#hospitales{
+    
+    grid-row: 1;
+    grid-column: 3;
+}
+#vacunas{
+   
+    grid-row: 1;
+    grid-column: 5;
+}
 .sintomas h2{
 
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -155,6 +192,9 @@ section{
 
     background-color: gray;
 }
+
+/* GRID */
+
 .container-grid{
 
     margin-left: 100px;
@@ -194,6 +234,9 @@ section{
     margin-top: 20px;
     margin-left: 50px;
 }
+
+/* ICONO TELEFONO */
+
 .telefono{
 
     background-image: url(../recursos/call-24px.svg);
@@ -207,6 +250,8 @@ a{
     color: white;
     text-decoration: none;
 }
+
+/* FOOTER */
 
 footer{
     display: flex;
@@ -261,7 +306,7 @@ footer{
     padding-top: 8px;
 }
 
-
+/* COLUMNA SUSCRIBITE */
 
 .sub{
     display: flex;
@@ -284,6 +329,9 @@ footer{
     border-style: none;
     cursor: pointer;
 }
+
+/* COLUMA REDES SOCIALES */
+
 .redes{
     width: 100%;
     padding: 20px;

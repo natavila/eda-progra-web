@@ -7,6 +7,9 @@
     box-sizing: border-box;
     font-family: 'Open Sans', sans-serif;
 }
+
+/* HEADER */
+
 .box{
 
     position: absolute;
@@ -105,6 +108,8 @@ input.src:hover{
     top: 0px;
 }
 
+/* GRID DE CONTACTO */
+
 .grid-contacto{
 
 	margin-top: 50px;
@@ -116,6 +121,8 @@ input.src:hover{
 	height: max-content;
 	
 }
+
+/* FORMULARIO */
 
 .formulario{
 
@@ -131,6 +138,9 @@ input.src:hover{
 
 	margin-top: 50px;
 }
+
+/* SECTION DATOS DE CONTACTO */
+
 .datos-contacto{
 
 	grid-column: 3;
@@ -153,6 +163,9 @@ input.src:hover{
 	color: white;
 	font-weight: bold;
 }
+
+/* ASIDE CONTACTO */
+
 #contacto{
 
 	color: white;
@@ -175,11 +188,16 @@ input.src:hover{
 	border: 3px;
 	
 }
+
+/* POSICION DEL MAPA EN LA GRILLA */
+
 #mapa{
 
 	grid-column: 3;
 	grid-row: 2;
 }
+
+/* BOTON ENVIAR */
 .enviar{
 
 	color: white;
@@ -191,6 +209,8 @@ input.src:hover{
 	font-size: 16px;
 	
 }
+
+/* FOOTER */
 
 footer{
     display: flex;
@@ -245,7 +265,7 @@ footer{
     padding-top: 8px;
 }
 
-
+/* COLUMNA SUSCRIBITE */
 
 .sub{
     display: flex;
@@ -268,6 +288,9 @@ footer{
     border-style: none;
     cursor: pointer;
 }
+
+/* REDES SOCIALES */
+
 .redes{
     width: 100%;
     padding: 20px;
@@ -299,6 +322,8 @@ footer{
 	
 }
 
+/* ICONOS DE REDES */ 
+
 #facebook {
     
 	background-color: #3b5998;
@@ -319,6 +344,8 @@ footer{
 #whatsapp{
 	background-color: #4dc247;
 }
+
+/* COLOR DE LETRA DEL FOOTER */
 
 a{
 	color: white;

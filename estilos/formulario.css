@@ -88,6 +88,9 @@ input.src:hover{
     width: 100px;
 }
 
+/* BODY */
+
+/* MEDIDAS DE PRECUACION */
 .covid{
 
     text-align: center;
@@ -115,6 +118,8 @@ input.src:hover{
     margin-left: 250px;
 
 }
+
+/* IMAGENES DE PRECAUCION */
 
 .img-1{
 
@@ -181,138 +186,6 @@ input.src:hover{
     grid-row: 2;
 }
 
-footer{
-    display: flex;
-    flex-direction: column;
-    background-color: black;
-    color: white;
-    margin-top: 0px;
-   
-    
-}
-.content-sup{
-    height: 30vh;
-    display: flex;
-    justify-content: space-between;
-    flex-direction: row;  
-}
-
-.col{
-    padding: 20px;
-    text-transform: uppercase;
-    font-size: 14px;
-}
-
-.uno{
-    font-size: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-   
-}
-
-.naranja{
-    color:  #048C73;
-}
-
-#titulo{
-    cursor: pointer;
-}
-
-ul .lista{
-
-    margin-left: 0px;
-}
-
-.lista {
-    display: flex ;
-    flex-direction: column;
-    align-items: flex-start;
-    list-style: none;
-    margin-top: 20px;
-}
-
-.lista li{
-    padding-top: 8px;
-    
-}
-
-
-
-.sub{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    margin-top: 20px;
-}
-
-.sub #mail{
-    border-radius: 10px;
-    padding: 5px;    
-}
-
-.sub #submit{
-    margin-top: 10px;
-    background-color: #048C73;
-    border-radius: 10px;
-    padding-left: 15px;
-    padding-right: 15px;
-    border-style: none;
-    cursor: pointer;
-}
-
-.redes{
-    width: 100%;
-    padding: 20px;
-    
-}
-
-.redes ul{
-	display: flex;
-	justify-content: center;
-	align-items: flex-start;
-	list-style: none;
-	margin-bottom: 10px;
-}
-
-.redes li {
-	background-color: #BAADAA;
-	height: 25px;
-	width: 25px;
-	border-radius: 50%;
-	padding: 18px;
-	margin-right: 12px;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-}
-
-.redes a{
-	text-decoration: none;
-	
-}
-
-#facebook {
-    
-	background-color: #3b5998;
-}
-
-#twitter {
-	background-color:#55acee; 
-}
-
-#instagram {
-	background-color: #125688;
-}
-
-#youtube{
-	background-color: #bb0000;
-}
-
-#whatsapp{
-	background-color: #4dc247;
-}
 
 /*  GRID */
 
@@ -455,7 +328,8 @@ h5{
     font-size: 20px;
 }
 
-    
+/* IMAGENES SINTOMAS */
+
 .sintoma-1{
      background-image: url(../recursos/23-fiebre-tos.png);
      background-repeat: no-repeat;   
@@ -478,6 +352,8 @@ h5{
     background-size: 250px;
     margin-top: 0%;
 }
+
+/* HOSPITALES */
 
 .grid-hospitales{
 
@@ -511,4 +387,138 @@ h5{
     grid-row: 1;
 }
 
+/* FOOTER */
+footer{
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    color: white;
+    margin-top: 0px;
+   
+    
+}
+.content-sup{
+    height: 30vh;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;  
+}
 
+.col{
+    padding: 20px;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+.uno{
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+   
+}
+
+.naranja{
+    color:  #048C73;
+}
+
+#titulo{
+    cursor: pointer;
+}
+
+ul .lista{
+
+    margin-left: 0px;
+}
+
+.lista {
+    display: flex ;
+    flex-direction: column;
+    align-items: flex-start;
+    list-style: none;
+    margin-top: 20px;
+}
+
+.lista li{
+    padding-top: 8px;
+    
+}
+
+/* COLUMNA SUSCRIBITE */
+
+.sub{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 20px;
+}
+
+.sub #mail{
+    border-radius: 10px;
+    padding: 5px;    
+}
+
+.sub #submit{
+    margin-top: 10px;
+    background-color: #048C73;
+    border-radius: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-style: none;
+    cursor: pointer;
+}
+
+/* COLUMNA REDES SOCIALES */
+
+.redes{
+    width: 100%;
+    padding: 20px;
+    
+}
+
+.redes ul{
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+	list-style: none;
+	margin-bottom: 10px;
+}
+
+.redes li {
+	background-color: #BAADAA;
+	height: 25px;
+	width: 25px;
+	border-radius: 50%;
+	padding: 18px;
+	margin-right: 12px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.redes a{
+	text-decoration: none;
+	
+}
+
+#facebook {
+    
+	background-color: #3b5998;
+}
+
+#twitter {
+	background-color:#55acee; 
+}
+
+#instagram {
+	background-color: #125688;
+}
+
+#youtube{
+	background-color: #bb0000;
+}
+
+#whatsapp{
+	background-color: #4dc247;
+}
