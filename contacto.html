@@ -3,6 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Unlam Medical - Home</title>
+	<script type="text/javascript" src="../EDA1-Grupo-12/js/contacto.js"></script>
 	<link rel="stylesheet" type="text/css" href="../EDA1-Grupo-12/estilos/contacto.css">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 </head>
@@ -29,19 +30,22 @@
 	<nav class="grid-contacto">
                 <aside class="formulario"> 
 					 <h1 id="contacto">CONTACTO</h1>
-					<form action="../index/index.html" method="GET" id="formulario" >
+					<form action="" method="GET" id="formulario" name="form">
 						   
                    <p>Nombre y Apellido</p>
-                        <input type="text" maxlength="150" id="cajas" required/> 
+                        <input type="text" maxlength="150" class="cajas" id="nombre" required/> 
                      
                     <p>Email</p>
-                        <input type="email" id="cajas" required/>  
+                        <input type="email" class="cajas" id="email" onclick="validarCorreo()" required/>  
                     <p>Teléfono</p>  
-						<input type="tel" id="cajas" name="tel">
+						<input type="tel" class="cajas" id="telefono" name="telefono">
 					<p>Consulta</p>
-					<input type="text" id="consulta" maxlength="500"/>
+					<textarea placeholder="Escriba su consulta" name="message" onkeyup="countChars(this);" class="consulta"></textarea>
+					<p id="charNum">1000</p>
+					
+				<!-- 	<input type="text" class="consulta" id="consulta" maxlength="500"/> -->
 
-					<input type="submit" value="Enviar" class="enviar"/>
+					<input type="submit" value="Enviar" class="enviar" onclick="valida_envia()"/>
 				</form>
 		</aside>
 		<section class="datos-contacto">

@@ -173,14 +173,14 @@ input.src:hover{
 	text-align: center;
 	font-weight: bold;
 }
-#cajas{
+.cajas{
 
 	width: 21.2em;
 	height: 2em;
 	border-radius: 8px;
 	border: 3px;
 }
-#consulta{
+.consulta{
 
 	width: 30em;
 	height: 20em;

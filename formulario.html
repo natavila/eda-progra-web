@@ -2,7 +2,8 @@
 <html>
 <head>
 	<meta charset="UTF-8">
-	<title>Unlam Medical - Formulario COVID-19</title>
+    <title>Unlam Medical - Formulario COVID-19</title>
+    <script src="../EDA1-Grupo-12/js/formulario.js"></script>
     <link rel="stylesheet" type="text/css" href="../EDA1-Grupo-12/estilos/formulario.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 </head>
@@ -58,7 +59,7 @@
             <div class="sintoma-3"></div>
             </nav>
             </div>
-            <form action="index.html" method="GET" class="formulario">
+            <form action="" method="GET" class="formulario">
                 <aside class="formulario">        
                     <p>Nombre y Apellido   
                         <input type="text" maxlength="150" class="nya"/> 
@@ -78,9 +79,10 @@
                         <input type="radio" name="Sexo" value="Mujer"/> Mujer
                     </p>    
                     <p>¿Has viajado al exterior de la República Argentina?
-                        <input type="radio" name="exterior" value="si"/> SI
-                        <input type="radio" name="exterior" value="no"/> NO
+                        <input type="radio" name="exterior" value="si" onclick="mostrarPaises()"> SI
+                        <input type="radio" name="exterior" value="no" onclick="ocultarPaises()"> NO
                     </p>
+                <div class="paisesVisitados" hidden>
                     <p>Países visitados:
                   <select name="paises">
                             <option>América del Norte</option>
@@ -92,36 +94,40 @@
                             <option>Oceanía</option>
                         </select>
                     </p>
+                </div>
                     <h4>Por favor, indica los síntomas que presentas:</h4> 
                         <p>¿Tuviste Fiebre mayor a 38 grados?
-                            <input type="radio" name="fiebre" value="si"/> SI
+                            <input type="radio" name="fiebre" value="si" class="opcionSi"> SI
                              <input type="radio" name="fiebre" value="no"/> NO
                         </p>     
                         <p>¿Tuviste Dolor de cabeza?
-                        <input type="radio" name="cabeza" value="si"/> SI
+                        <input type="radio" name="cabeza" value="si" class="opcionSi"> SI
                              <input type="radio" name="cabeza" value="no"/> NO
                         </p>     
                         <p>¿Tuviste una tos persistente?
-                        <input type="radio" name="tos" value="si"/> SI
+                        <input type="radio" name="tos" value="si" class="opcionSi"> SI
                              <input type="radio" name="tos" value="no"/> NO
                         </p>     
                         <p>¿Tuviste Dolor de garganta?
-                        <input type="radio" name="garganta" value="si"/> SI
+                        <input type="radio" name="garganta" value="si" class="opcionSi"> SI
                              <input type="radio" name="garganta" value="no"/> NO
                         </p>     
                         <p>¿Tuviste Dificultad para respirar?
-                        <input type="radio" name="respirar" value="si"/> SI
-                             <input type="radio" name="respirar" value="no"/> NO
-                        </p>     
+                        <input type="radio" name="respirar" value="si" class="opcionSi" onclick="mostrarDireccion()"> SI
+                             <input type="radio" name="respirar" value="no" onclick="ocultarDireccion()"> NO
+                        </p>    
+
+                <div class="direccion" hidden>   
                      <p> Dirección
                         <input type="text" name="direccion" required/> 
                      Ciudad
                         <input type="text" name="ciudad" required/> 
                     </p>
+                </div>  
                     
-                        <input type="submit" value="Enviar formulario" class="enviar"/>  
+                        <input type="submit" value="Enviar formulario" class="enviar" onclick="mostrarSintomas()">  
                     <input type="reset" value="Borrar los datos introducidos" class="enviar"/>
-                    
+            </aside>   
         </section>
         <h2 class="deteccion">MEDIDAS DE PRECAUCIÓN</h2>
         <nav class="grid-precaucion">
@@ -214,5 +220,6 @@
               </ul>
           </div>
         </footer>
+        
 </body>
 </html>
