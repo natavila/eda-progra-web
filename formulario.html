@@ -3,8 +3,8 @@
 <head>
 	<meta charset="UTF-8">
     <title>Unlam Medical - Formulario COVID-19</title>
-    <script src="../EDA1-Grupo-12/js/formulario.js"></script>
-    <link rel="stylesheet" type="text/css" href="../EDA1-Grupo-12/estilos/formulario.css">
+    <script src="js/formulario.js"></script>
+    <link rel="stylesheet" type="text/css" href="estilos/formulario.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 </head>
 <body>
@@ -62,16 +62,18 @@
             <form action="" method="GET" class="formulario">
                 <aside >        
                     <p>Nombre y Apellido   
-                        <input type="text" maxlength="150" class="nya"/> 
+                        <input type="text" maxlength="150" class="validar" id="nya"/> 
                      </p>   
                     <p>
                         DNI 
-                        <input type="text"/>  
+                        <input type="number" >  
                     Teléfono  
-                        <input type="tel" id="tel" name="tel">
+                        <input type="tel" id="tel" name="tel" class="validarTelefono">
                     </p>
+                    
+
                    <p>Ciudad
-                        <input type="text" name="ciudad"/> 
+                        <input type="text" name="ciudad" > 
                     Sexo 
                    
                         <input type="radio" name="Sexo" value="Hombre"/> Hombre
@@ -125,7 +127,7 @@
                     </p>
                 </div>  
                     
-                        <input type="submit" value="Enviar formulario" class="enviar" onclick="mostrarSintomas()">  
+                        <input type="submit" value="Enviar formulario" class="enviar" onclick="mostrarSintomas(), validarCampos()">  
                     <input type="reset" value="Borrar los datos introducidos" class="enviar"/>
             </aside>   
         </section>
