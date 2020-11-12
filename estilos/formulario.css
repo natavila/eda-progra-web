@@ -9,6 +9,10 @@
     font-family: 'Open Sans', sans-serif;
 }
 
+.menu-hamburguesa{
+    display: none;
+}
+
 .box{
 
     position: absolute;
@@ -520,5 +524,8 @@ ul .lista{
 }
 
 #whatsapp{
-	background-color: #4dc247;
+    background-color: #4dc247;
+   
 }
+
+

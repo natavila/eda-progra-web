@@ -11,11 +11,14 @@
 /* IMAGEN DE FONDO */
 body{
 
-    background: url(../recursos/imagen-fondo.png) no-repeat;
+    /* background: url(../recursos/imagen-fondo.png) no-repeat; */
     
 }
 
 /* ENCABEZADO */
+.menu-hamburguesa{
+    display: none;
+}
 
 .box{
 
@@ -199,7 +202,7 @@ section{
 
     margin-left: 100px;
     display: grid;
-    margin-top: 740px;
+    /* margin-top: 740px; */
     color: white;
     grid-template-columns: 500px 200px 200px;
     grid-template-rows: 300px;
@@ -383,3 +386,4 @@ footer{
 #whatsapp{
 	background-color: #4dc247;
 }
+

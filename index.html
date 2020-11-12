@@ -3,15 +3,21 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Unlam Medical - Home</title>
-	<link rel="stylesheet" type="text/css" href="../EDA1-Grupo-12/estilos/index.css">
+	<link rel="stylesheet" type="text/css" href="estilos/index.css">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+	<link rel="stylesheet" href="responsive/index-responsive.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	
+
 </head>
 <body>
-	<div class="fondo"></div>
+	
     <header class="container">
 		<div class="img"></div>
 		<div class="box">
 			<input type="text" list="listaenfermedades" name="search" placeholder="Buscar" class="src" autocomplete="off">
+			<span class="menu-hamburguesa"><i class="fas fa-bars"></i></span>
 			<datalist id="listaenfermedades">
 				<option value="COVID-19"></option>
 				<option value="Ebola"></option>
@@ -26,21 +32,32 @@
             <a href="contacto.html" class="item-options" target="_blank">CONTACTO</a>
         </nav>
 	</header>
+
+	<div class="slider">
+		<h2>Aca va el slider</h2>
+	</div>
+
 	<section>
 		<div class="container-grid">
-	<span class="columna-1">
-		<p class="sintomas">Si tenés síntomas de COVID-19</p>
-		<p class="llama">LLAMÁ AL</p>
-	</span>
-		<p class="numero">148</p>
-		<div class="telefono"></div>
-	</div>
-	<div class="grid-barra">
+			<div class="columna-1">
+				<p class="sintomas">Si tenés síntomas de COVID-19</p>
+				<p class="llama">LLAMÁ AL</p>
+			</div>
+			
+			<div class="columna-2">
+				<i class="fas fa-phone"></i>
+				<p class="numero">148</p>
+				
+			</div>	
+	    </div>
+
+		<div class="grid-barra">
 			<a href="enfermedades.html" class="estilo-barra" id="enfermedades">ENFERMEDADES</a>
 			<a href="ubicaciones.html" class="estilo-barra" id="hospitales"> MAPA DE HOSPITALES</a>
 			<a href="#" class="estilo-barra" id="vacunas">VACUNAS</a>
-	</div>
+		</div>
 	</section>
+
     <footer>
 		<div class="content-sup">
 			<div class="col uno">
@@ -102,6 +119,9 @@
 				  <li id="integrantes"><a href="#"><i class="fas fa-users"></i> </a></li>
 			  </ul>
 		  </div>
-    </footer>
+	</footer>
+	
+	<script src="jquery.js"></script>
+	<script src="slider.js"></script>
 </body>
 </html>
