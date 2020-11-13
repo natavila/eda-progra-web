@@ -3,16 +3,19 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Unlam Medical - Home</title>
-	<link rel="stylesheet" type="text/css" href="estilos/index.css">
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-	<link rel="stylesheet" href="responsive/index-responsive.css">
+    <link rel="stylesheet" type="text/css" href="estilos/calendario-vacunacion.css">   
+    <link href="estilos/fullcalendar.min.css" rel='stylesheet' />
+    <link href="estilos/fullcalendar.print.min.css" rel='stylesheet' media='print' />
+    <link href="estilos/EstilosCalendario.css" rel='stylesheet' media='print' />
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-	
-
+    <script src="js/moment.min.js"></script>
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/fullcalendar.min.js"></script>
+    <script src="js/calendario-vacunacion.js"></script>
 </head>
 <body>
-	
     <header class="container">
 		<div class="img"></div>
 		<div class="box">
@@ -31,54 +34,10 @@
             <a href="ubicaciones.html" class="item-options" target="_blank">UBICACIONES</a>
             <a href="contacto.html" class="item-options" target="_blank">CONTACTO</a>
         </nav>
-	</header>
-	<div id="ninja-slider">
-        <div class="slider">
-            <ul>
-                <li>
-                    <a class="ns-img" href="recursos/imagen-fondo.png"></a>
-                    <div class="caption"></div>
-                </li>
-                <li>
-                    <a class="ns-img" href="recursos/hospital1.jpg"></a>
-                    <div class="caption"></div>
-                </li>
-                <li>
-                    <a class="ns-img" href="recursos/hospital2.jpg"></a>
-                    <div class="caption"></div>
-                </li>
-                <li>
-                    <a class="ns-img" href="recursos/hospital3.jpg"></a>
-                    <div class="caption"></div>
-                </li>
-                <li>
-                    <a class="ns-img" href="recursos/hospital5.jpg"></a>
-                    <div class="caption"></div>
-                </li>
-            </ul>
-            <div class="navsWrapper">
-                <div id="ninja-slider-prev"></div>
-                <div id="ninja-slider-next"></div>
-            </div>
-        </div>
-    </div>
-	<section>
-		<div class="container-grid">
-			<div class="columna-1">
-				<p class="sintomas">Si tenés síntomas de COVID-19</p>
-				<p class="llama">LLAMÁ AL</p>
-			</div>
-				<i class="fas fa-phone"></i>
-				<p class="numero">148</p>
-	    </div>
-
-		<div class="grid-barra">
-			<a href="enfermedades.html" class="estilo-barra" id="enfermedades">ENFERMEDADES</a>
-			<a href="ubicaciones.html" class="estilo-barra" id="hospitales"> MAPA DE HOSPITALES</a>
-			<a href="calendario-vacunacion.html" class="estilo-barra" id="vacunas">VACUNAS</a>
-		</div>
-	</section>
-
+    </header>
+    <section>
+    <div id='calendar'></div>
+    </section>
     <footer>
 		<div class="content-sup">
 			<div class="col uno">
