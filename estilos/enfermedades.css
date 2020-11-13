@@ -1,0 +1,420 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+*{
+
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+/*  ENCABEZADO  */
+.box{
+
+    position: absolute;
+    top: 30px;
+    left: 90%;
+    transform: translate(-50%, -50%);
+    
+}
+input.src{
+
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 30px;
+    padding-right: 10px;
+    border-radius: 15px;
+    font-size: 15px;
+    border: 3px solid #048C73;
+    background: #fff url(../recursos/search-icon.png) no-repeat 9px center;
+    width: 0px;
+    transition: all .5s;
+    text-align: start;
+	
+}
+input.src:hover{
+
+    width: 100px;
+    background-color: #fff;
+    border-color: gray;
+    box-shadow: 0 0 5px white;
+}
+.container{
+
+    width: 100%;
+    height: 60px;
+    background: #048C73;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 5rem;
+    box-sizing: border-box;
+    
+    
+}
+.item-options{
+
+    color: white;
+    margin: 0 1.5rem;
+    text-decoration: none;
+    
+}
+.menu a{
+
+    color:#fff;
+    text-decoration: none;
+    padding: 20px;
+    
+}
+.menu a:hover{
+
+    background-color: #fff;
+    color: #048C73;
+    
+}
+.img{
+
+    background-image: url(../recursos/unlam-medica-100px.png);
+    background-color: transparent;
+    background-size: auto;
+    background-repeat: no-repeat;
+    position: absolute;
+    float: left;
+    left: 20px;
+    top: 10px;
+    height: 50px;
+    width: 100px;
+}
+.container{
+
+    width: 100%;
+    height: 60px;
+    background:  #048C73;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 5rem;
+    box-sizing: border-box;
+    
+}
+
+
+.titulo{
+
+    margin-top: 1em;
+	text-align: center;
+    font-weight: bold;
+    padding: 0%;
+    color: black;
+    font-size: 30px;
+}
+
+/* BUSCADOR ENFERMEDADES */
+
+.box_enfermedades{
+
+	position: absolute;
+    top: 50%;
+    left: 90%;
+    transform: translate(-50%, -50%);
+}
+
+input.src_enfermedades{
+
+	padding: 5px 80px 5px 120px;
+    outline: none;
+    font-size: 17px;
+    font-weight: bold;
+    border-radius: 15px;
+    color: #444;
+    border:  solid #048C73;
+    background: #fff url(../recursos/search-icon.png) no-repeat 9px center;
+    text-align: center;
+    
+	
+	
+}
+.encabezado_enfermedades{
+	width: 100%;
+    height: 50px;
+    background: #048C73;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 5rem;
+    box-sizing: border-box;
+    position: sticky;
+    top: 0;
+    
+}
+
+/*  GRID SECCION  ENFERMEDADES */
+
+.container_enfermedades{
+
+    
+    border-radius: 15px;
+    display: grid;
+    margin: 0 50px;
+    width: auto;
+    height: max-content;
+    grid-template-columns: 300px 1% 1fr;
+    grid-template-rows: 400px 15px 400px 15px 400px 15px 400px ;
+   
+   
+    
+}
+
+/* SECTION MAIN */
+
+.main{
+
+    grid-column: 3;
+    padding: 20px;
+    
+    
+    
+}
+.main #enfermedad{
+
+    font-size: 30px;
+}
+
+/* ASIDE */
+
+.sidebar{
+   
+    grid-column: 1;
+    
+    
+}
+
+/* INFO ENFERMEDADES */
+
+ #covid{
+    border-radius: 15px;
+    padding: 20px;
+    grid-row: 1;
+    background-color: #048c7385;
+
+}
+#ebola{
+
+    border-radius: 15px;
+    padding: 20px;
+    margin-top: 50px;
+    grid-row: 3;
+    background-color: #048c7385;
+}
+#sarampion{
+    border-radius: 15px;
+    padding: 20px;
+    margin-top: 50px;
+    grid-row: 5;
+    background-color: #048c7385;
+}
+#influenza{
+    border-radius: 15px;
+    padding: 20px;
+    margin-top: 50px;
+    grid-row: 7;
+    background-color: #048c7385;
+}
+
+/* IMAGENES ENFERMEDADES */
+
+.coronavirus{
+
+    
+    background-image: url(../recursos/imagen-coronavirus.jpg);
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    background-size: 300px;
+    padding: auto;
+    grid-row: 1;
+    margin-top: 70px;
+}
+.ebola{
+
+    
+    background-image: url(../recursos/imagen-ebola.jpg);
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    background-size: 300px;
+    padding: auto;
+    grid-row: 2;
+    margin-top: 70px;
+}
+.sarampion{
+
+    
+    background-image: url(../recursos/imagen-sarampion.jpg);
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    background-size: 300px;
+    padding: auto;
+    grid-row: 3;
+    margin-top: 25px;
+}
+.influenza{
+
+    
+    background-image: url(../recursos/imagen-influenza.jpg);
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    background-size: 300px;
+    padding: auto;
+    grid-row: 4;
+    margin-top: 20px;
+}
+
+/* BOTON VER MAS DEL MAIN */
+
+.main #ver-mas{
+
+    padding: 5px;
+    background-color: #048C73;
+    border-radius: 15px;
+    line-height: 50px;
+}
+
+/*  FOOTER  */
+footer{
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    color: white;
+    margin-top: 40px;
+}
+
+
+.content-sup{
+    height: 30vh;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;  
+}
+
+.col{
+    padding: 20px;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+.uno{
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+   
+}
+
+.naranja{
+    color: #048C73;
+}
+
+#titulo{
+    cursor: pointer;
+}
+
+
+
+.lista {
+    display: flex ;
+    flex-direction: column;
+    align-items: flex-start;
+    list-style: none;
+    margin-top: 20px;
+}
+
+.lista li{
+    padding-top: 8px;
+}
+
+
+
+.sub{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 20px;
+}
+
+.sub #mail{
+    border-radius: 10px;
+    padding: 5px;    
+}
+
+.sub #submit{
+    margin-top: 10px;
+    background-color: #048C73;
+    border-radius: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-style: none;
+    cursor: pointer;
+}
+
+/* COLUMNA REDES SOCIALES */
+
+.redes{
+    width: 100%;
+    padding: 20px;
+    
+}
+
+.redes ul{
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+	list-style: none;
+	margin-bottom: 10px;
+}
+
+.redes li {
+	background-color: #BAADAA;
+	height: 25px;
+	width: 25px;
+	border-radius: 50%;
+	padding: 18px;
+	margin-right: 12px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.redes a{
+	text-decoration: none;
+	
+}
+
+#facebook {
+    
+	background-color: #3b5998;
+}
+
+#twitter {
+	background-color:#55acee; 
+}
+
+#instagram {
+	background-color: #125688;
+}
+
+#youtube{
+	background-color: #bb0000;
+}
+
+#whatsapp{
+	background-color: #4dc247;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}

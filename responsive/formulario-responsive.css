@@ -1,0 +1,166 @@
+@media only screen and (max-width:600px){
+    *{
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;      
+    }
+
+    body{
+        background: none;
+        display: flex;
+        flex-direction: column;
+        min-width: 100%;
+        /* background-color: black; */
+        
+    }
+    
+    .container{
+        width: 100%; 
+        height: 8em;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+                              
+    }
+
+    header nav, .src {
+        display: none;        
+    }
+    
+    .menu-hamburguesa{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+    }
+
+    /* SECTION - TITULO + IMAGEN */
+    .grid_container{
+        margin: 0px;
+
+    }
+
+    .sidebar {
+        margin: 0px;
+        width: 100%;
+        height: 100%;      
+    }
+
+    .main{
+        display: none;
+    }
+
+    .deteccion{
+        margin: 0px;
+    }
+
+    section{
+        margin: 0px;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .img-sintomas{
+        display: none;
+        grid-template-columns: repeat(3,1fr);
+    
+    }
+
+    .datoItem {
+        margin: 0px;
+        padding: 0px;
+        width:100%;
+        
+    }
+
+    .formulario {
+       width: 360px; 
+    }
+
+    .formContainer{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    /* MEDIDAS PRECAUCION */
+    .medidasPrecaucion{
+        width: 100%;
+        height: 100px;
+        margin-top: 2em;
+    }
+
+    .grid-precaucion{   
+        margin: 0px;
+        display: flex;
+        flex-wrap: wrap; 
+        justify-content: center;        
+    }
+
+    .grid-precaucion div{
+        background: none;
+    }
+
+    .grid-precaucion div:nth-child(1){
+      content: url(../recursos/14-lavarse-manos.png);
+      height: 10em;
+    }
+
+    .grid-precaucion div:nth-child(2){
+     content: url(../recursos/15-estornudar.png);
+     height: 10em;  
+    }
+
+    .grid-precaucion div:nth-child(3){
+      content: url(../recursos/16-tocar-nariz.png);
+      height: 10em;  
+    }
+
+    .grid-precaucion div:nth-child(4){
+      content: url(../recursos/17-ventilar.png);
+      height: 10em;  
+    } 
+ 
+    .grid-precaucion div:nth-child(5){
+        content: url(../recursos/18-limpiar-objetos.png);
+        height: 10em;
+    }
+  
+    .grid-precaucion div:nth-child(6){
+       content: url(../recursos/19-permanecer-domicilio.png);
+       height: 10em;  
+    }
+  
+    .grid-precaucion div:nth-child(7){
+        content: url(../recursos/20-reducir-contacto.png);
+        height: 10em;  
+    }
+  
+    .grid-precaucion div:nth-child(8){
+        content: url(../recursos/21-no-compartir-mate.png);
+        height: 10em;  
+    } 
+       
+
+    /* MAPA */
+    .maps{
+       display: none;
+    }
+
+    .medidasPrecaucion{
+        height: 100%;
+    }
+    /* FOOTER */
+  
+    footer .content-sup{
+        display: none;
+    }
+
+    footer{
+        margin-top: 50px;
+    }
+
+
+    
+}

@@ -1,0 +1,353 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+*{
+
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* HEADER */
+
+.box{
+
+    position: absolute;
+    top: 30px;
+    left: 90%;
+    transform: translate(-50%, -50%);
+    
+}
+input.src{
+
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 30px;
+    padding-right: 10px;
+    border-radius: 15px;
+    font-size: 15px;
+    border: 3px solid #048C73;
+    background: #fff url(../recursos/search-icon.png) no-repeat 9px center;
+    width: 0px;
+    transition: all .5s;
+    text-align: start;
+	
+}
+input.src:hover{
+
+    width: 100px;
+    background-color: #fff;
+    border-color: gray;
+    box-shadow: 0 0 5px white;
+}
+
+.container{
+
+    width: 100%;
+    height: 60px;
+    background: #048C73;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 5rem;
+    box-sizing: border-box;
+    position: sticky;
+    top: 0;
+    
+}
+
+
+.item-options{
+
+    color: white;
+    margin: 0 1.5rem;
+    text-decoration: none;
+    
+}
+
+.menu a{
+
+    color:#fff;
+    text-decoration: none;
+    padding: 20px;
+    
+}
+
+.menu a:hover{
+
+    background-color: #fff;
+    color: #048C73;
+    
+}
+
+.img{
+
+    background-image: url(../recursos/unlam-medica-100px.png);
+    background-color: transparent;
+    background-size: auto;
+    background-repeat: no-repeat;
+    position: absolute;
+    float: left;
+    left: 20px;
+    top: 10px;
+    height: 50px;
+    width: 100px;
+}
+
+.container{
+
+    width: 100%;
+    height: 60px;
+    background:  #048C73;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 5rem;
+    box-sizing: border-box;
+    position: sticky;
+    top: 0px;
+}
+
+/* GRID DE CONTACTO */
+
+.grid-contacto{
+
+	margin-top: 50px;
+	margin-left: 100px;
+	display: grid;
+	grid-template-columns: 500px 5% 500px;
+	grid-template-rows: max-content;
+	width: max-content;
+	height: max-content;
+	
+}
+
+/* FORMULARIO */
+
+.formulario{
+
+	border-radius: 15px;
+	grid-column: 1;
+	grid-row: 1;
+	background-color: #048c7385;
+	padding: 30px;
+	
+	line-height: 30px;
+}
+#formulario{
+
+	margin-top: 50px;
+}
+
+/* SECTION DATOS DE CONTACTO */
+
+.datos-contacto{
+
+	grid-column: 3;
+	grid-row: 1;
+	line-height: 30px;
+	
+}
+#d-contacto{
+
+	margin-top: 20px;
+	font-size: 30px;
+	text-align: center;
+}
+#datos{
+
+	margin-top: 20px;
+	background-color: rgba(128, 128, 128, 0.479);
+	padding: 20px;
+	border-radius: 15px;
+	color: white;
+	font-weight: bold;
+}
+
+/* ASIDE CONTACTO */
+
+#contacto{
+
+	color: white;
+	font-size: 30px;
+	text-align: center;
+	font-weight: bold;
+}
+.cajas{
+
+	width: 21.2em;
+	height: 2em;
+	border-radius: 8px;
+	border: 3px;
+}
+.consulta{
+
+	width: 30em;
+	height: 20em;
+	border-radius: 8px;
+	border: 3px;
+	
+}
+
+/* POSICION DEL MAPA EN LA GRILLA */
+
+#mapa{
+
+	grid-column: 3;
+	grid-row: 2;
+}
+
+/* BOTON ENVIAR */
+.enviar{
+
+	color: white;
+	border-radius: 15px;
+	border: 3px;
+	margin-top: 20px;
+	padding: 8px 10px;
+	background-color: #048C73;
+	font-size: 16px;
+	
+}
+
+/* FOOTER */
+
+footer{
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    color: white;
+    margin-top: 20px;
+}
+
+
+.content-sup{
+    height: 30vh;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;  
+}
+
+.col{
+    padding: 20px;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+.uno{
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+   
+}
+
+.naranja{
+    color: #048C73;
+}
+
+#titulo{
+    cursor: pointer;
+}
+
+
+
+.lista {
+    display: flex ;
+    flex-direction: column;
+    align-items: flex-start;
+    list-style: none;
+    margin-top: 20px;
+}
+
+.lista li{
+    padding-top: 8px;
+}
+
+/* COLUMNA SUSCRIBITE */
+
+.sub{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 20px;
+}
+
+.sub #mail{
+    border-radius: 10px;
+    padding: 5px;    
+}
+
+.sub #submit{
+    margin-top: 10px;
+    background-color: #048C73;
+    border-radius: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-style: none;
+    cursor: pointer;
+}
+
+/* REDES SOCIALES */
+
+.redes{
+    width: 100%;
+    padding: 20px;
+    
+}
+
+.redes ul{
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+	list-style: none;
+	margin-bottom: 10px;
+}
+
+.redes li {
+	background-color: #BAADAA;
+	height: 25px;
+	width: 25px;
+	border-radius: 50%;
+	padding: 18px;
+	margin-right: 12px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.redes a{
+	text-decoration: none;
+	
+}
+
+/* ICONOS DE REDES */ 
+
+#facebook {
+    
+	background-color: #3b5998;
+}
+
+#twitter {
+	background-color:#55acee; 
+}
+
+#instagram {
+	background-color: #125688;
+}
+
+#youtube{
+	background-color: #bb0000;
+}
+
+#whatsapp{
+	background-color: #4dc247;
+}
+
+/* COLOR DE LETRA DEL FOOTER */
+
+a{
+	color: white;
+	text-decoration: none;
+}

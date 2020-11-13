@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+    <title>Unlam Medical - Formulario COVID-19</title>
+    <script src="js/formulario.js"></script>
+    <link rel="stylesheet" type="text/css" href="estilos/formulario.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="responsive/formulario-responsive.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+	<div class="fondo"></div>
+    <header class="container">
+        <div class="img"></div>
+        <div class="box">
+            <input type="text" list="listaenfermedades" name="search" placeholder="Buscar" class="src" autocomplete="off">
+            <span class="menu-hamburguesa"><i class="fas fa-bars"></i></span>
+    <datalist id="listaenfermedades">
+		<option value="COVID-19"></option>
+		<option value="Ebola"></option>
+		<option value="Sarampion"></option>
+		<option value="Influenza"></option>
+	</datalist>	
+        </div>
+        <nav class="menu">
+            <a href="index.html" class="item-options" target="_blank">HOME</a>
+            <a href="enfermedades.html" class="item-options" target="_blank">ENFERMEDADES</a>
+            <a href="ubicaciones.html" class="item-options" target="_blank">UBICACIONES</a>
+            <a href="contacto.html" class="item-options" target="_blank">CONTACTO</a>
+        </nav>
+    </header>
+
+    <h1 class="covid">COVID-19</h1>
+
+    <div class="grid_container">
+		<aside class="sidebar">
+			<div class="imagen_enfermedad"></div>
+        </aside>
+        
+		<div class="main">
+			<div class="descripcion">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae eius harum commodi vel sapiente veniam facere a excepturi. Voluptas aperiam reprehenderit ipsam, facere ipsa veniam ab accusamus officiis corrupti rerum?
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias iste voluptas quam veniam consequuntur? Eaque sint, sunt eum reiciendis quidem labore minima quam quisquam, iusto commodi facere quasi a ducimus.
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nemo sunt omnis voluptas est, odio eius consectetur rerum iste esse numquam veritatis ea in fugit? Facere incidunt quibusdam saepe quos dolor.
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius tempora, dignissimos ipsum quae quos eligendi illum dicta, ipsa labore nemo quam aliquid praesentium modi. Non voluptates nobis perspiciatis dignissimos beatae.
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ut mollitia soluta in eos fugit est quam, beatae, delectus rem ea cum eveniet molestiae facilis omnis voluptatum neque. Perspiciatis, consequatur repellendus.
+            </div>
+		</div>
+        </div>
+        <h2 class="deteccion">FORMULARIO DE DETECCIÓN DE COVID-19</h2>
+
+        <section class="grid-formulario">
+            <div class="leyenda">
+            <p>Hola usuario! Si tienes síntomas de XXXX o has estado en
+                contacto con una persona afectada deberías hacer un control y seguimiento
+                diario de tus síntomas.
+                Esta aplicación te permitirá hacer un seguimiento de la evolución de los
+                síntomas y te dará las indicaciones y consejos a seguir en cada caso.
+                El uso de este servicio supone la aceptación de los términos y la política de
+                privacidad descritos en 'Ver las condiciones y políticas'</p>
+                <h5>SÍNTOMAS</h5>
+
+            <nav class="img-sintomas">
+              <div class="sintoma-1"></div>
+              <div class="sintoma-2"></div>
+              <div class="sintoma-3"></div>
+            </nav>
+
+            </div>
+
+            <div class="formContainer">
+            <form action="" method="GET">
+                <aside >        
+                    <div>
+                        Nombre y Apellido:   
+                        <input type="text" maxlength="150" class="validar" id="nya"/> 
+                    </div> 
+
+                    <div class="datoItem">  
+                        DNI:                     
+                        <input type="text" > 
+                    </div>
+                    
+                    <div class="datoItem">
+                        Teléfono:
+                        <input type="tel" id="tel" name="tel" class="validarTelefono">
+                    </div>
+                
+                    <div class="datoItem">
+                        Ciudad
+                        <input type="text" name="ciudad" >
+                    </div>  
+
+                    <div class="datoItem">
+                        Sexo: 
+                        <input type="radio" name="Sexo" value="Hombre"/> Hombre                   
+                        <input type="radio" name="Sexo" value="Mujer"/> Mujer
+                    </div>
+                    
+                       
+                    <div class="datoItem">
+                        <p>¿Has viajado al exterior de la República Argentina? 
+                            <input type="radio" name="exterior" value="si" onclick="mostrarPaises()"> SI
+                            <input type="radio" name="exterior" value="no" onclick="ocultarPaises()"> NO
+                        </p>
+                    </div>
+                    
+                <div class="paisesVisitados" hidden>
+                    <p>Países visitados:
+                  <select name="paises">
+                            <option>América del Norte</option>
+                            <option>América Central</option>
+                            <option>América del Sur</option>
+                            <option>Europa</option>
+                            <option>África</option>
+                            <option>Asia</option>
+                            <option>Oceanía</option>
+                        </select>
+                    </p>
+                </div>
+
+                <h4>Por favor, indica los síntomas que presentas:</h4> 
+
+                <div class="datoItem">
+                    <p>¿Tuviste Fiebre mayor a 38 grados?
+                        <input type="radio" name="fiebre" value="si" class="opcionSi"> SI
+                         <input type="radio" name="fiebre" value="no"/> NO
+                    </p>  
+                </div>
+
+                <div class="datoItem">
+                    <p>¿Tuviste Dolor de cabeza?
+                        <input type="radio" name="cabeza" value="si" class="opcionSi"> SI
+                             <input type="radio" name="cabeza" value="no"/> NO
+                    </p> 
+                </div>
+
+                <div class="datoItem">
+                    <p>¿Tuviste una tos persistente?
+                        <input type="radio" name="tos" value="si" class="opcionSi"> SI
+                        <input type="radio" name="tos" value="no"/> NO
+                    </p> 
+                </div>
+
+                <div class="datoItem">
+                    <p>¿Tuviste una tos persistente?
+                        <input type="radio" name="tos" value="si" class="opcionSi"> SI
+                        <input type="radio" name="tos" value="no"/> NO
+                    </p>
+                </div>
+                    
+                <div class="datoItem">
+                    <p>¿Tuviste Dolor de garganta?
+                        <input type="radio" name="garganta" value="si" class="opcionSi"> SI
+                        <input type="radio" name="garganta" value="no"/> NO
+                    </p>
+                </div>  
+                
+                <div class="datoItem">
+                    <p>¿Tuviste Dificultad para respirar?
+                     <input type="radio" name="respirar" value="si" class="opcionSi" onclick="mostrarDireccion()"> SI
+                     <input type="radio" name="respirar" value="no" onclick="ocultarDireccion()"> NO
+                    </p> 
+                </div>       
+
+                <div class="direccion" hidden>   
+                     <p> Dirección
+                        <input type="text" name="direccion" required/> 
+                     Ciudad
+                        <input type="text" name="ciudad" required/> 
+                    </p>
+                </div>  
+                    
+                <div class="botonesSubmit">
+                    <input type="submit" value="Enviar formulario" class="enviar" onclick="mostrarSintomas(), validarCampos()">  
+                    <input type="reset" value="Borrar los datos introducidos" class="enviar"/>
+                </div>
+
+            </div>
+
+            </aside>   
+        
+        </section>
+
+        <div class="medidasPrecaucion">
+          <h2 class="deteccion">MEDIDAS DE PRECAUCIÓN</h2>
+            <nav class="grid-precaucion">
+                <div class="img-1"></div>
+                <div class="img-2"></div>
+                <div class="img-3"></div>
+                <div class="img-4"></div>
+                <div class="img-5"></div>
+                <div class="img-6"></div>
+                <div class="img-7"></div>
+                <div class="img-8"></div>
+            </nav>
+        </div>
+
+
+    <div class="maps">
+        <h2 class="deteccion">HOSPITALES MÁS CERCANOS ESPECIALIZADO EN LA ENFERMEDAD</h2>
+        <nav class="grid-hospitales">
+            <div class="datos-hospital">              
+                <h3 class="nombre-hospital">NOMBRE HOSPITAL</h3>
+                <div class="datos">
+                <p>Tel.:</p>
+                <p>Dirección:</p>
+                <p>Ciudad:</p>
+            </div>
+
+            <iframe src="https://www.google.com/maps/embed?pb=!4v1602706614571!6m8!1m7!1s0JvW9QMqBZX3DZVmuhdQDA!2m2!1d-34.66820737053963!2d-58.56780382828684!3f171.39364327611162!4f-16.191328634592807!5f0.7820865974627469" width="200" height="200" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+        </div>
+            <div class="mapa-hospital">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3281.3740269014447!2d-58.56505388504999!3d-34.6705084685416!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc62cc3ef7083%3A0x8867107f425fade5!2sNational%20University%20of%20La%20Matanza!5e0!3m2!1sen!2sar!4v1602705535457!5m2!1sen!2sar" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+            </div>
+        </nav>
+    </div>
+
+
+    <footer>
+        <div class="content-sup">
+            <div class="col uno">
+                
+                <div id="titulo">
+                 <h2>Unlam Medical</h2>
+                 <h6>Medicina de calidad</h6>
+                </div>
+    
+                <div id="info">
+                    <h4 class="naranja">CONTACTO</h4>
+                    <div id="numero"><i class="fas fa-phone-square naranja"></i> 4444-6666</div>
+                    <div id="mail"><i class="fas fa-envelope naranja"></i> unlam@unlam.com</div>
+                </div>
+    
+            </div>
+    
+            <div class="col">
+                <h2 class="naranja">Informacion</h2>
+                <ul class="lista">
+                    <li><a href="index.html">HOME</a></li>
+					<li><a href="enfermedades.html">ENFERMEDADES</a></li>
+					<li><a href="ubicaciones.html">UBICACIONES</a></li>
+					<li><a href="contacto.html">CONTACTO</a></li>
+                </ul>
+    
+            </div>
+    
+            <div class="col">
+                <h2 class="naranja">Integrantes</h2>
+    
+                <ul class="lista">
+                    <li><a href="https://github.com/estyCai32" target="_blank">Barone Esteban - 43445028</a></li>
+					<li><a href="https://github.com/natavila" target="_blank">Avila Nataly - 42671687</a></li>
+					<li><a href="https://github.com/tomasPalavecino" target="_blank">Palavecino Tomas - 42888374</a></li>                 
+                </ul>
+            </div>
+    
+            <div class="col" >
+                <h2 class="naranja">Subscribite</h2>
+                <div class="sub">
+                <form action="">  
+                 <input id="mail"  type="email" placeholder="Ingrese Mail" >
+                 <input id="submit"  type="submit" value="SUBSCRIBIRME">
+                </form>  
+            </div>
+            </div>
+    
+    
+          </div>
+    
+    
+    
+          <div class="redes">
+              <ul>
+                  <li id="facebook"><a href="#"><i class="fab fa-facebook"></i></a></li>
+                  <li id="twitter"><a href="#"><i class="fab fa-twitter"></i></a></li>
+                  <li id="instagram"><a href="#"><i class="fab fa-instagram"></i></a></li>
+                  <li id="youtube"><a href="#"><i class="fab fa-youtube"></i></a></li>
+                  <li id="whatsapp"><a href="#"><i class="fab fa-whatsapp"></i> </a></li>
+                  <li id="integrantes"><a href="#"><i class="fas fa-users"></i> </a></li>
+              </ul>
+          </div>
+        </footer>
+        
+</body>
+</html>

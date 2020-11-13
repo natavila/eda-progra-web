@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Unlam Medical - Home</title>
+	<script type="text/javascript" src="js/contacto.js"></script>
+	<link rel="stylesheet" type="text/css" href="estilos/contacto.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+</head>
+<body>
+	<div class="fondo"></div>
+    <header class="container">
+		<div class="img"></div>
+		<div class="box">
+			<input type="text" list="listaenfermedades" name="search" placeholder="Buscar" class="src" autocomplete="off">
+			<datalist id="listaenfermedades">
+				<option value="COVID-19"></option>
+				<option value="Ebola"></option>
+				<option value="Sarampion"></option>
+				<option value="Influenza"></option>
+			</datalist>
+		</div>
+        <nav class="menu">
+            <a href="index.html" class="item-options" target="_blank">HOME</a>
+            <a href="enfermedades.html" class="item-options" target="_blank">ENFERMEDADES</a>
+            <a href="ubicaciones.html" class="item-options" target="_blank">UBICACIONES</a>
+            <a href="contacto.html" class="item-options">CONTACTO</a>
+        </nav>
+	</header>
+	<nav class="grid-contacto">
+                <aside class="formulario"> 
+					 <h1 id="contacto">CONTACTO</h1>
+					<form action="" method="GET" id="formulario" name="form">
+						   
+                   <p>Nombre y Apellido</p>
+                        <input type="text" maxlength="150" class="cajas" id="nombre" required/> 
+                     
+                    <p>Email</p>
+                        <input type="email" class="cajas" id="email" onclick="validarCorreo()" required/>  
+                    <p>Teléfono</p>  
+						<input type="tel" class="cajas" id="telefono" name="telefono">
+					<p>Consulta</p>
+					<textarea placeholder="Escriba su consulta" name="message" onkeyup="countChars(this);" class="consulta"></textarea>
+					<p id="charNum">1000</p>
+					
+				<!-- 	<input type="text" class="consulta" id="consulta" maxlength="500"/> -->
+
+					<input type="submit" value="Enviar" class="enviar" onclick="valida_envia()"/>
+				</form>
+		</aside>
+		<section class="datos-contacto">
+			<h1 id="d-contacto">DATOS DE CONTACTO</h1>
+			<div id="datos">
+			<p>Dirección: Florencio Varela 1903 (B1754JEC)</p>
+			<p>Teléfono: 4444-6666</p>
+			<p>Celular: (+5411) 4480-8900</p>
+			<p>Email: unlam@unlam.com</p>
+			<p>Web: www.unlam.edu.ar</p>
+			</div>
+			
+			<div id="mapa">
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3281.3740269014447!2d-58.56505388505!3d-34.6705084685416!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc62cc3ef7083%3A0x8867107f425fade5!2sNational%20University%20of%20La%20Matanza!5e0!3m2!1sen!2sar!4v1602789531279!5m2!1sen!2sar" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+			</div>
+		</section>
+		
+	</nav>
+	
+	<footer>
+		<div class="content-sup">
+			<div class="col uno">
+				
+				<div id="titulo">
+				 <h2>Unlam Medical</h2>
+				 <h6>Medicina de calidad</h6>
+				</div>
+	
+				<div id="info">
+					<h4 class="naranja">CONTACTO</h4>
+					<div id="numero"><i class="fas fa-phone-square naranja"></i> 4444-6666</div>
+					<div id="mail"><i class="fas fa-envelope naranja"></i> unlam@unlam.com</div>
+				</div>
+	
+			</div>
+	
+			<div class="col">
+				<h2 class="naranja">Informacion</h2>
+				<ul class="lista">
+					<li><a href="index.html">HOME</a></li>
+					<li><a href="enfermedades.html">ENFERMEDADES</a></li>
+					<li><a href="ubicaciones.html">UBICACIONES</a></li>
+					<li><a href="contacto.html">CONTACTO</a></li>
+				</ul>
+	
+			</div>
+	
+			<div class="col">
+				<h2 class="naranja">Integrantes</h2>
+	
+				<ul class="lista">
+					<li><a href="https://github.com/estyCai32" target="_blank">Barone Esteban - 43445028</a></li>
+					<li><a href="https://github.com/natavila" target="_blank">Avila Nataly - 42671687</a></li>
+					<li><a href="https://github.com/tomasPalavecino" target="_blank">Palavecino Tomas - 42888374</a></li>              
+				</ul>
+			</div>
+	
+			<div class="col" >
+				<h2 class="naranja">Subscribite</h2>
+	
+				<form action="" class="sub">  
+				 <input id="mail"  type="email" placeholder="Ingrese Mail">
+				 <input id="submit"  type="submit" value="SUBSCRIBIRME">
+				</form>  
+			</div>
+	
+	
+		  </div>
+	
+	
+	
+		  <div class="redes">
+			  <ul>
+				  <li id="facebook"><a href="#"><i class="fab fa-facebook"></i></a></li>
+				  <li id="twitter"><a href="#"><i class="fab fa-twitter"></i></a></li>
+				  <li id="instagram"><a href="#"><i class="fab fa-instagram"></i></a></li>
+				  <li id="youtube"><a href="#"><i class="fab fa-youtube"></i></a></li>
+				  <li id="whatsapp"><a href="#"><i class="fab fa-whatsapp"></i> </a></li>
+				  <li id="integrantes"><a href="#"><i class="fas fa-users"></i> </a></li>
+			  </ul>
+		  </div>
+
+	</footer>
+
+</body>
+</html>
