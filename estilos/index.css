@@ -56,8 +56,7 @@ input.src:hover{
     align-items: center;
     padding: 0 5rem;
     box-sizing: border-box;
-    position: sticky;
-    top: 0;
+   
     
 }
 
@@ -99,19 +98,6 @@ input.src:hover{
     width: 100px;
 }
 
-.container{
-
-    width: 100%;
-    height: 60px;
-    background:  #048C73;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 0 5rem;
-    box-sizing: border-box;
-    position: sticky;
-    top: 0px;
-}
 
 /* COLUMNA ENFERMEDADES, HOSPITALES, CALENDARIO DE VACUNAS */
 
