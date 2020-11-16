@@ -6,6 +6,10 @@
 	<script type="text/javascript" src="js/contacto.js"></script>
 	<link rel="stylesheet" type="text/css" href="estilos/contacto.css">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+	<link rel="stylesheet" href="responsive/contacto-responsive.css">
+	<meta name="viewport" content="width=device-width" />
+	</style>
+
 </head>
 <body>
 	<div class="fondo"></div>
@@ -13,6 +17,7 @@
 		<div class="img"></div>
 		<div class="box">
 			<input type="text" list="listaenfermedades" name="search" placeholder="Buscar" class="src" autocomplete="off">
+			<span class="menu-hamburguesa"><i class="fas fa-bars"></i></span>
 			<datalist id="listaenfermedades">
 				<option value="COVID-19"></option>
 				<option value="Ebola"></option>
@@ -49,6 +54,7 @@
 				</form>
 		</aside>
 		<section class="datos-contacto">
+			<div class="datosContacto">
 			<h1 id="d-contacto">DATOS DE CONTACTO</h1>
 			<div id="datos">
 			<p>Dirección: Florencio Varela 1903 (B1754JEC)</p>
@@ -58,8 +64,8 @@
 			<p>Web: www.unlam.edu.ar</p>
 			</div>
 			
-			<div id="mapa">
-				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3281.3740269014447!2d-58.56505388505!3d-34.6705084685416!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc62cc3ef7083%3A0x8867107f425fade5!2sNational%20University%20of%20La%20Matanza!5e0!3m2!1sen!2sar!4v1602789531279!5m2!1sen!2sar" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+			<div class="contenedor-map">
+				<iframe id="mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3281.3740269014447!2d-58.56505388505!3d-34.6705084685416!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc62cc3ef7083%3A0x8867107f425fade5!2sNational%20University%20of%20La%20Matanza!5e0!3m2!1sen!2sar!4v1602789531279!5m2!1sen!2sar" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
 			</div>
 		</section>
 		

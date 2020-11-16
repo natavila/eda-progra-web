@@ -78,6 +78,13 @@
        width: 360px; 
     }
 
+    .grid-formulario{
+        width: 100%;
+        margin: 0px;
+        display: flex;
+        flex-direction: column;
+    }
+
     .formContainer{
         width: 100%;
         display: flex;
